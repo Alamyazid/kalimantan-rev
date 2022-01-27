@@ -15,15 +15,13 @@ domain=$(cat /etc/v2ray/domain)
 # Uuid Service
 uuid=$(cat /proc/sys/kernel/random/uuid)
 
-# Trojan Go Akun 
-mkdir -p /etc/trojan-go/
-touch /etc/trojan-go/akun.conf
-touch /etc/trojan-go/uuid.txt
 
 # Installing Trojan Go
 mkdir -p /etc/trojan-go/
 chmod 777 /etc/trojan-go/
 touch /etc/trojan-go/trojan-go.pid
+touch /etc/trojan-go/akun.conf
+touch /etc/trojan-go/uuid.txt
 wget -O /etc/trojan-go/trojan-go https://github.com/alamyazid/kalimantan-rev/raw/main/trojan-go
 wget -O /etc/trojan-go/geoip.dat https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/geoip.dat
 wget -O /etc/trojan-go/geosite.dat https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/geosite.dat
