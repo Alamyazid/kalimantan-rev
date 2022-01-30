@@ -15,7 +15,7 @@ domain=$(cat /etc/v2ray/domain)
 # Uuid Service
 uuid=$(cat /proc/sys/kernel/random/uuid)
 
-mkdir -p /etc/trojan-go/
+mkdir /etc/trojan-go/
 chmod 777 /etc/trojan-go/
 touch /etc/trojan-go/trojan-go.pid
 touch /etc/trojan-go/akun.conf
