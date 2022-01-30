@@ -1,17 +1,4 @@
 #!/bin/bash
-# Trojan Go Auto Setup 
-# =========================
-red='\e[1;31m'
-green='\e[0;32m'
-NC='\e[0m'
-MYIP=$(wget -qO- ifconfig.me/ip);
-
-exit 0
-fi
-clear
-# Domain 
-domain=$(cat /etc/v2ray/domain)
-
 # Uuid Service
 uuid=$(cat /proc/sys/kernel/random/uuid)
 
