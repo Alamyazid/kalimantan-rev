@@ -44,8 +44,7 @@ wget https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/ohp-ovpn.sh
 #install lolcat
 wget https://raw.githubusercontect.com/alamyazid/kalimantan-rev/main/install/lolcat.sh && chmod +x lolcat.sh && ./lolcat.sh
 #install trojango
-wget https://raw.githubusercontect.com/alamyazid/kalimantan-rev/main/install/trojan-go.sh && chmod +x trojan-go.sh && ./trojan-go.sh
-
+wget https://raw.githubusercontent.com/Alamyazid/kalimantan-rev/main/install/trojan-go.sh && chmod +x trojan-go.sh && ./trojan-go.sh
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
 rm -f /root/wg.sh
