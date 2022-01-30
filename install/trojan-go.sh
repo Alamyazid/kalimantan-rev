@@ -158,3 +158,11 @@ systemctl daemon-reload
 systemctl daemon-reload
 systemctl enable trojan-go.service
 systemctl start trojan-go
+
+cd /usr/bin
+wget -O tr-go "https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/menu-all/tr-go.sh"
+wget -O add-trgo "https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/tr-go/add-trgo.sh"
+wget -O renew-trgo "https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/tr-go/renew-trgo.sh"
+wget -O cek-trgo "https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/tr-go/cek-trgo.sh"
+wget -O del-trgo "https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/tr-go/del-trgo.sh"
+
