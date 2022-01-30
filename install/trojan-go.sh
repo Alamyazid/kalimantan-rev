@@ -32,9 +32,9 @@ wget -O del-trgo "https://raw.githubusercontent.com/Alamyazid/kalimantan-rev/mai
 
 # Installing Trojan Go
 
-wget -O /etc/trojan-go/trojan-go https://github.com/alamyazid/kalimantan-rev/raw/main/trojan-go
-wget -O /etc/trojan-go/geoip.dat https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/geoip.dat
-wget -O /etc/trojan-go/geosite.dat https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/geosite.dat
+wget -O /etc/trojan-go/trojan-go https://github.com/Alamyazid/kalimantan-rev/raw/main/trojan-go
+wget -O /etc/trojan-go/geoip.dat https://raw.githubusercontent.com/Alamyazid/kalimantan-rev/main/geoip.dat
+wget -O /etc/trojan-go/geosite.dat https://raw.githubusercontent.com/Alamyazid/kalimantan-rev/main/geosite.dat
 chmod +x /etc/trojan-go/trojan-go
 cat <<EOF > /etc/trojan-go/config.json
 {
