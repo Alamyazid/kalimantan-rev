@@ -7,9 +7,9 @@ MYIP=$(wget -qO- icanhazip.com);
 exit 0
 fi
 apt install jq curl -y
-DOMAIN=myvpnid.xyz
+DOMAIN=migtunnel.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.iwaksapat.site
+SUB_DOMAIN=${sub}.migtunnel.my.id
 CF_ID=exeldept13@gmail.com
 CF_KEY=cd9375e00bd60eef46d1bdde69337d468ce2b
 set -euo pipefail
