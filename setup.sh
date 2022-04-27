@@ -19,9 +19,9 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Getting
-MYIP=$(wget -qO- ipinfo.io/ip);
+MYIP=$(wget -qO- icanhazip.com);
 echo "Checking VPS"
-IZIN=$(wget -qO- ipinfo.io/ip);
+IZIN=$(wget -qO- icanhazip.com);
 
 rm -f setup.sh
 clear
