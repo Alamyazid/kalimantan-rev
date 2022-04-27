@@ -40,6 +40,7 @@ echo -e   "   6  Panel V2Ray"
 echo -e   "   7  Panel VLess"
 echo -e   "   8  Panel TRojan"
 echo -e   "   9  Panel Trojan-go"
+echo -e   "   0  panel V-gRCP"
 echo -e   "  \e[1;32m------------------------------------------------------------\e[m" | lolcat
 echo -e   "                             SYSTEM MENU\e[m" | lolcat 
 echo -e   "  \e[1;32m------------------------------------------------------------\e[m" | lolcat
@@ -148,6 +149,9 @@ cfh
 ;;
 27)
 autoreboot
+;;
+0
+xraay
 ;;
 x)
 exit
