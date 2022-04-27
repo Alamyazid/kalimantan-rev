@@ -22,8 +22,8 @@ mkdir /etc/xray
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 #install Domain
-wget https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/cfd.sh && chmod +x cfd.sh && ./cfd.sh
-wget https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/install/cf.sh && chmod +x cf.sh && ./cf.sh
+#wget https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/cfd.sh && chmod +x cfd.sh && ./cfd.sh
+#wget https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/install/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
 wget https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/install/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
