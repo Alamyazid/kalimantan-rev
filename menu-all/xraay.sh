@@ -18,9 +18,9 @@ echo -e "\e[1;32m═════════════════════
 echo -e " x)   MENU"
 echo -e "\e[1;32m═══════════════════════════════════════" | lolcat
 echo -e ""
-read -p "     Please Input Number  [1-4 or x] :  "  v2ray
+read -p "     Please Input Number  [1-4 or x] :  "  xray
 echo -e ""
-case $v2ray in
+case $xray in
 1)
 addgrcp
 ;;
