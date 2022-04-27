@@ -26,12 +26,12 @@ logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
 cd /usr/bin
-wget -O autobackup "https://raw.githubusercontent.com/Alamyazid/rev/main/autobackup.sh"
-wget -O backup "https://raw.githubusercontent.com/Alamyazid/rev/main/backup.sh"
-wget -O bckp "https://raw.githubusercontent.com/Alamyazid/rev/main/bckp.sh"
-wget -O restore "https://raw.githubusercontent.com/Alamyazid/rev/main/restore.sh"
-wget -O strt "https://raw.githubusercontent.com/Alamyazid/rev/main/strt.sh"
-wget -O limit-speed "https://raw.githubusercontent.com/Alamyazid/rev/main/limit-speed.sh"
+wget -O autobackup "https://raw.githubusercontent.com/Alamyazid/rev/main/backup/autobackup.sh"
+wget -O backup "https://raw.githubusercontent.com/Alamyazid/rev/main/backup/backup.sh"
+wget -O bckp "https://raw.githubusercontent.com/Alamyazid/rev/main/backup/bckp.sh"
+wget -O restore "https://raw.githubusercontent.com/Alamyazid/rev/main/backup/restore.sh"
+wget -O strt "https://raw.githubusercontent.com/Alamyazid/rev/main/backup/strt.sh"
+wget -O limit-speed "https://raw.githubusercontent.com/Alamyazid/rev/main/backup/limit-speed.sh"
 chmod +x autobackup
 chmod +x backup
 chmod +x bckp
