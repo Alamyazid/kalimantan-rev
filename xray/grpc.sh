@@ -320,11 +320,12 @@ systemctl restart vless-grpc
 cd /usr/bin
 
 
-wget -O addgrpc "https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/grpc/addgrpc.sh"
-wget -O delgrpc "https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/grpc/delgrpc.sh"
-wget -O renewgrpc "https://raw.githubusercontent.com/jagoanneon01n-rev/main/grpc/renewgrpc.sh"
-wget -O cekgrpc "https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/grpc/cekgrpc.sh"
-wget -O cetxray "https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/grpc/certxray.sh"
+wget -O addgrpc "https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/xray/addgrpc.sh"
+wget -O delgrpc "https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/xray/delgrpc.sh"
+wget -O renewgrpc "https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/xray/renewgrpc.sh"
+wget -O cekgrpc "https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/xray/cekgrpc.sh"
+wget -O cetxray "https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/xray/certxray.sh"
+wget -O xraay "https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/menu-all/xraay.sh"
 
 
 chmod +x addgrpc
@@ -332,5 +333,6 @@ chmod +x delgrpc
 chmod +x renewgrpc
 chmod +x cekgrpc
 chmod +x certxray
+chmod +x xraay
 
 rm -f grpc.sh
