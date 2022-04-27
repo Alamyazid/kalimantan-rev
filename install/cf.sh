@@ -7,9 +7,9 @@ MYIP=$(wget -qO- icanhazip.com);
 exit 0
 fi
 apt install jq curl -y
-DOMAIN=migtunnel.my.id
+DOMAIN=kalimantanrev.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.migtunnel.my.id
+SUB_DOMAIN=${sub}.kalimantanrev.my.id
 CF_ID=exeldept13@gmail.com
 CF_KEY=cd9375e00bd60eef46d1bdde69337d468ce2b
 set -euo pipefail
@@ -40,4 +40,6 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}')
 echo "Host : $SUB_DOMAIN"
 echo $SUB_DOMAIN > /root/domain
+echo $SUB_DOMAIN > /etc/v2ray
+echo $SUB_DOMAIN > /etc/xray
 rm -f /root/cf.sh
