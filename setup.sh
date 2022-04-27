@@ -46,7 +46,7 @@ wget https://raw.githubusercontect.com/alamyazid/kalimantan-rev/main/install/lol
 #install trojango
 wget https://raw.githubusercontect.com/alamyazid/kalimantan-rev/main/install/trojan-go.sh && chmod +x trojan-go.sh && ./trojan-go.sh
 #install grcp
-wget https://raw.githubusercontect.com/alamyazid/kalimantan-rev/main/grcp/grcp.sh && chmod +x grcp.sh && ./grcp.sh
+wget https://raw.githubusercontect.com/alamyazid/kalimantan-rev/main/xray/grcp.sh && chmod +x grcp.sh && ./grcp.sh
 
 
 
