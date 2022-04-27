@@ -150,7 +150,7 @@ cfh
 27)
 autoreboot
 ;;
-0
+0)
 xraay
 ;;
 x)
