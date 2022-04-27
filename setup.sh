@@ -30,15 +30,14 @@ echo "Script Already Installed"
 exit 0
 fi
 mkdir /etc/xray
-mkdir /var/lib/crot;
-echo "IP=" >> /var/lib/crot/ipvps.conf
+mkdir /var/lib/premium-script;
+echo "IP=" >> /var/lib/premium-script/ipvps.conf
 echo "Masukkan Domain Anda, Jika Anda Tidak Memiliki Domain Klik Enter"
 echo "Ketikkan Perintah newhost setelah proses instalasi Script Selesai"
 read -p "Hostname / Domain: " host
 echo "IP="$host >> /var/lib/crot/ipvps.conf
 echo "$host" >> /etc/xray/domain
 #install Domain
-#wget https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/cfd.sh && chmod +x cfd.sh && ./cfd.sh
 wget https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/install/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
 wget https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
