@@ -15,10 +15,10 @@ MYIP=$(wget -qO- icanhazip.com);
 exit 0
 fi
 if [ -f "/etc/v2ray/domain" ]; then
-if [ -f "/etc/xray/domain" ]; then
 echo "Script Already Installed"
 exit 0
 fi
+mkdir /etc/xray
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 #install Domain
