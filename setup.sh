@@ -35,8 +35,8 @@ echo "IP=" >> /var/lib/premium-script/ipvps.conf
 #echo "Masukkan Domain Anda, Jika Anda Tidak Memiliki Domain Klik Enter"
 #echo "Ketikkan Perintah newhost setelah proses instalasi Script Selesai"
 #read -p "Hostname / Domain: " host
-echo "IP="$host >> /var/lib/premium-script/ipvps.conf
-echo "$host" >> /etc/xray/domain
+#echo "IP="$host >> /var/lib/premium-script/ipvps.conf
+#echo "$host" >> /etc/xray/domain
 #install Domain
 wget https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/install/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
