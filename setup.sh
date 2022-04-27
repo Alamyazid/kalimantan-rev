@@ -7,20 +7,36 @@ if [ "$(systemd-detect-virt)" == "openvz" ]; then
 		echo "OpenVZ is not supported"
 		exit 1
 fi
-red='\e[1;31m'
-green='\e[0;32m'
-NC='\e[0m'
+# ==========================================
+# Color
+RED='\033[0;31m'
+NC='\033[0m'
+GREEN='\033[0;32m'
+ORANGE='\033[0;33m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+CYAN='\033[0;36m'
+LIGHT='\033[0;37m'
+# ==========================================
+# Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
+echo "Checking VPS"
+IZIN=$(wget -qO- ipinfo.io/ip);
 
-exit 0
-fi
-if [ -f "/etc/v2ray/domain" ]; then
+rm -f setup.sh
+clear
+if [ -f "/etc/xray/domain" ]; then
 echo "Script Already Installed"
 exit 0
 fi
 mkdir /etc/xray
-mkdir /var/lib/premium-script;
-echo "IP=" >> /var/lib/premium-script/ipvps.conf
+mkdir /var/lib/crot;
+echo "IP=" >> /var/lib/crot/ipvps.conf
+echo "Masukkan Domain Anda, Jika Anda Tidak Memiliki Domain Klik Enter"
+echo "Ketikkan Perintah newhost setelah proses instalasi Script Selesai"
+read -p "Hostname / Domain: " host
+echo "IP="$host >> /var/lib/crot/ipvps.conf
+echo "$host" >> /etc/xray/domain
 #install Domain
 #wget https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/cfd.sh && chmod +x cfd.sh && ./cfd.sh
 wget https://raw.githubusercontent.com/alamyazid/kalimantan-rev/main/install/cf.sh && chmod +x cf.sh && ./cf.sh
